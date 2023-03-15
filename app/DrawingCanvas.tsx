@@ -15,7 +15,7 @@ export interface DrawingCanvasHandle {
 
 export const DrawingCanvas = forwardRef((_, ref) => {
   const isDrawingRef = useRef<boolean>(false);
-  const canvasRef = useRef<HTMLCanvasElement>();
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
   const draw = (e: PointerEvent<HTMLCanvasElement>) => {
     if (!isDrawingRef.current) {
