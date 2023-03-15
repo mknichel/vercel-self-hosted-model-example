@@ -13,7 +13,15 @@ export default function Home() {
       <header className="text-center my-4">
         <h1 className="text-xl font-bold">Self Hosted MNIST Example</h1>
         <div className="text-sm">
-          This page shows an example of self hosting a TensorFlow model.
+          This page shows an example of self hosting a TensorFlow model on
+          Vercel. See{" "}
+          <a
+            className="underline"
+            href="https://github.com/mknichel/vercel-self-hosted-model-example"
+          >
+            GitHub
+          </a>{" "}
+          for more information on how it works.
         </div>
       </header>
       <main className="m-4">
