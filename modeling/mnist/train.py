@@ -43,9 +43,6 @@ def main():
       epochs=6,
       validation_data=ds_test,
   )
-  print(np.argmax(model.predict(ds_test), axis=1).tolist())
-  print(np.concatenate([y for x, y in ds_test], axis=0).tolist())
-  print(np.concatenate([x for x, y in ds_test], axis=0).tolist()[0])
 
   model.save('./models/saved_model')
 
