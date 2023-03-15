@@ -8,6 +8,15 @@ It's not recommended to self host your own
 ML model, but this can be a convenient way to iterate on modeling while having
 a web application to interact with the results of the model.
 
+## Introduction
+
+This example has three pieces:
+
+- A TensorFlow Keras model trained in the `modeling/mnist` directory
+- A Vercel serverless API route using the Python runtime
+- A Next.js web application where you can draw digits and call the API route
+  to view the results of the model.
+
 ## Getting started
 
 ### Training the model

@@ -27,3 +27,9 @@ Then run the training script:
 ```bash
 pipenv run python train.py
 ```
+
+The model will be saved to `modeling/mnist/models/model.tflite`.
+
+A TensorFlow Lite model will be saved because of restrictions in running
+TensorFlow models on Vercel serverless functions. See
+[api/README.md](/api/README.md) for more information.

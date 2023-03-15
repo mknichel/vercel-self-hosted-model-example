@@ -44,8 +44,6 @@ def main():
       validation_data=ds_test,
   )
 
-  model.save('./models/saved_model')
-
   converter = tf.lite.TFLiteConverter.from_keras_model(model)
   tflite_model = converter.convert()
   with open('./models/model.tflite', 'wb') as f:

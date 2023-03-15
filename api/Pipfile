@@ -4,6 +4,6 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-opencv-python = "*"
+pillow = "*"
 numpy = "*"
-tensorflow = "*"
+tflite_runtime = "<=2.7.0"
